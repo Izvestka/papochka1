@@ -19,12 +19,12 @@ $hash = hash('sha256', $passw);
 
 
 
-$sql = "SELECT * FROM userr WHERE login='$user' AND pwdhash='$hash'";
+$sql = "SELECT * FROM users WHERE login='$user' AND pwdhash='$hash'";
 
-//echo $sql; А далее! пароль гавно, привилегии слишком большие, код тоже гавно, в нем пороль где-то,
+//echo $sql; А далее! пароль уг, привилегии слишком большие, код тоже уг, в нем пороль где-то,
 //а также SQL ВНЕДРЕНИЕ!!!
 
-$conn = mysqli_connect("localhost:3306","root","","traa");
+$conn = mysqli_connect("localhost:3306","root","","cyb3");
 $result = mysqli_query($conn, $sql);
 
 //var_dump(mysqli_num_rows($result));
